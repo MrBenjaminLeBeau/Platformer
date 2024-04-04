@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://bjmxqbwmsysfj"]
+
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_p0enb"]
+[ext_resource type="Texture2D" uid="uid://cl37ejdu867u" path="res://Sprites/PlayerSprite.png" id="2_t2mvi"]
+[ext_resource type="Script" path="res://Scripts/Player Follow Camera.gd" id="3_hlhgb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_brbs2"]
+size = Vector2(32, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cs530"]
+size = Vector2(32, 32)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_p0enb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_t2mvi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_brbs2")
+
+[node name="Area2D" type="Area2D" parent="."]
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_cs530")
+
+[node name="Player Follow Camera" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = 0
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+script = ExtResource("3_hlhgb")
+
+[node name="JumpTimer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[connection signal="timeout" from="JumpTimer" to="." method="_on_timer_timeout"]
