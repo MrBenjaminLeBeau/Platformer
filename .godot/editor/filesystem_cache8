@@ -1,0 +1,22 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1712191605
+EmptyCheckpoint.png::CompressedTexture2D::7331682000731286877::1701753565::1712191329::1::::<><>::
+FlagCheckpoint.png::CompressedTexture2D::2493698335915064684::1701753565::1712191329::1::::<><>::
+icon.svg::CompressedTexture2D::4175008734415701944::1701735945::1712191329::1::::<><>::
+player.tscn::PackedScene::1072315529724232386::1701774757::0::1::::<><>::res://Scripts/Player.gd<>uid://cl37ejdu867u::::res://Sprites/PlayerSprite.png
+::res://Scenes/::1712190709
+checkpoint.tscn::PackedScene::1266453336583030610::1712190709::0::1::::<><>::uid://dcpry4qfj1u10::::res://EmptyCheckpoint.png<>res://Scripts/checkpoint.gd<>uid://bbr732owhkhro::::res://FlagCheckpoint.png
+level.tscn::PackedScene::5981085449993994764::1712190709::0::1::::<><>::uid://drfnjj5g2krqi::::res://Sprites/GroundSprite.png<>uid://kxx0mwe80vcf::::res://Sprites/ObstacleSprite.png<>uid://bjmxqbwmsysfj::::res://Scenes/player.tscn<>uid://sbqkipdtnap3::::res://Scenes/checkpoint.tscn<>uid://cm1bcgj8uvl2t::::res://Scenes/spike.tscn
+player.tscn::PackedScene::3044317960099507547::1712190709::0::1::::<><>::res://Scripts/Player.gd<>uid://cl37ejdu867u::::res://Sprites/PlayerSprite.png<>res://Scripts/Player Follow Camera.gd
+spike.tscn::PackedScene::5668845931798996509::1712190709::0::1::::<><>::uid://ni78774y7bv3::::res://Sprites/SpikeSprite.png<>res://Scripts/spike.gd
+::res://Scripts/::1702046376
+checkpoint.gd::GDScript::-1::1701777849::0::1::::Checkpoint<>Node2D<>::
+Player Follow Camera.gd::GDScript::-1::1701756795::0::1::::<>Camera2D<>::
+Player.gd::GDScript::-1::1702046376::0::1::::Player<>CharacterBody2D<>::
+spike.gd::GDScript::-1::1701774304::0::1::::<>Node2D<>::
+::res://Scripts/Core/::1701774669
+GameManager.gd::GDScript::-1::1701774669::0::1::::<>Node<>::
+::res://Sprites/::1712191329
+GroundSprite.png::CompressedTexture2D::8363600194110651308::1701736461::1712191329::1::::<><>::
+PlayerSprite.png::CompressedTexture2D::164843287934147256::1701736461::1712191329::1::::<><>::
+SpikeSprite.png::CompressedTexture2D::930973595826192522::1701736461::1712191329::1::::<><>::
